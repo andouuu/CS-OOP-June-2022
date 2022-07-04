@@ -1,12 +1,13 @@
 ﻿using System;
 
-namespace P04.RandomList
+namespace CustomRandomList
 {
-    internal class Program
+    public class StartUp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            RandomList randomList=new RandomList(){"ando","banso","lanbo"};
+            Console.WriteLine(randomList.RandomString());
         }
     }
 }

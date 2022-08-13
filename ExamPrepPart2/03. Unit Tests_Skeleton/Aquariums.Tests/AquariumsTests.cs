@@ -130,5 +130,15 @@ namespace Aquariums.Tests
             //Assert
             Assert.AreEqual(fishToSell, aquarium.SellFish("johny"));
         }
+        [Test]
+        public void ReportTest()
+        {
+            var fish = new Fish("Gosho");
+            var fish1 = new Fish("Pesho");
+            var aqua = new Aquarium("stoqn", 3);
+            aqua.Add(fish);
+            aqua.Add(fish1);
+            Assert.AreEqual("Fish available at stoqn: Gosho, Pesho", aqua.Report());
+        }
     }
 }
